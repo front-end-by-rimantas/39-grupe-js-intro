@@ -121,19 +121,19 @@ console.clear();
 let t = 1024;
 console.log(t);
 
-t = t % 2;
+t = t * 2;
 console.log(t);
 
-t = t % 2;
+t = t * 2;
 console.log(t);
 
-t = t % 2;
+t = t * 2;
 console.log(t);
 
-t = t % 2;
+t = t * 2;
 console.log(t);
 
-t = t % 2;
+t = t * 2;
 console.log(t);
 
 console.log(10 / 0);
@@ -154,3 +154,66 @@ console.log(-0 / 0);
 console.log(Infinity / Infinity);
 console.log(-Infinity / Infinity);
 
+console.clear();
+
+let silense = 1;
+console.log(silense);
+silense += 4;
+console.log('+= 4 ->', silense);
+silense *= 6;
+console.log('*= 6 ->', silense);
+silense -= 10;
+console.log('-= 10 ->', silense);
+silense /= 4;
+console.log('/= 4 ->', silense);
+silense %= 3;
+console.log('%= 3 ->', silense);
+silense **= 3;
+console.log('**= 3 ->', silense);
+
+let i = 1;
+i = i + 1;
+console.log(i);
+i += 1;
+console.log(i);
+i++;
+console.log(i);
+++i;
+console.log(i);
+i++;
+console.log(i);
+++i;
+console.log(i);
+
+let j = 1;
+j = j - 1;
+console.log(j);
+j -= 1;
+console.log(j);
+j--;
+console.log(j);
+--j;
+console.log(j);
+j--;
+console.log(j);
+--j;
+console.log(j);
+
+console.clear();
+let m = 0;
+console.log(m++);
+console.log(m++);
+console.log(m++);
+console.log(m++);
+console.log(m++);
+console.log(m++);
+console.log(m);
+
+let n = 100;
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(n);
