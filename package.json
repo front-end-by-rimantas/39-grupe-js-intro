@@ -5,8 +5,10 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
-        "numbers": "nodemon ./js/numbers.js",
+        "array": "nodemon ./js/array.js",
+        "boolean": "nodemon ./js/boolean.js",
         "strings": "nodemon ./js/strings.js",
+        "numbers": "nodemon ./js/numbers.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
