@@ -60,3 +60,40 @@ const backEnter = `Labas
 rytas
 Lietuva.`;
 console.log(backEnter);
+
+console.clear();
+
+// Labas, as Krabas Patis.
+// Labas, as Vaikas Bosas.
+
+const firstname1 = 'Krabas';
+const lastname1 = 'Patis';
+
+const firstname2 = 'Vaikas';
+const lastname2 = 'Bosas';
+
+const labas1_1 = 'Labas, as ' + firstname1 + ' ' + lastname1 + '.';
+console.log(labas1_1);
+
+const labas1_2 = "Labas, as " + firstname1 + " " + lastname1 + ".";
+console.log(labas1_1);
+
+const labas2_1 = 'Labas, as ' + firstname2 + ' ' + lastname2 + '.';
+console.log(labas2_1);
+
+const labas2_2 = "Labas, as " + firstname2 + " " + lastname2 + ".";
+console.log(labas2_1);
+
+console.log('--------------');
+const labas1_b = `Labas, as ${firstname1} ${lastname1}.`;
+console.log(labas1_b);
+
+const labas2_b = `Labas, as ${firstname2} ${lastname2}.`;
+console.log(labas2_b);
+
+console.log('Labas, as ${firstname1} ${lastname1}.');
+
+const a = 7;
+const b = 5;
+
+console.log(`${a} + ${b} = ${a + b}`);
