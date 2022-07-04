@@ -5,6 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
+        "daugyba": "nodemon ./nd/daugyba.js",
+        "tusciaFunkcija": "nodemon ./nd/tusciaFunkcija.js",
         "function": "nodemon ./js/function.js",
         "switch": "nodemon ./js/switch.js",
         "if": "nodemon ./js/if.js",
