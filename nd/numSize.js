@@ -7,17 +7,27 @@ function numSize(number) {
     }
 
     const numberAsString = '' + number;
-    let numberSize = numberAsString.length;
+    let size = 0;
 
-    if (number < 0) {
-        numberSize--;
+    for (let i = 0; i < numberAsString.length; i++) {
+        const symbol = numberAsString[i];
+        switch (symbol) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+                size++;
+                break;
+        }
     }
 
-    if (number % 1 !== 0) {
-        numberSize--;
-    }
-
-    return numberSize;
+    return size;
 }
 
 console.log(numSize(true), '->', 'ERROR');
