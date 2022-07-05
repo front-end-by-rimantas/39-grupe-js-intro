@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
+        "letters": "nodemon ./nd/letters.js",
         "bigNum": "nodemon ./nd/bigNum.js",
         "numSize": "nodemon ./nd/numSize.js",
         "daugyba": "nodemon ./nd/daugyba.js",
