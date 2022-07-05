@@ -9,11 +9,11 @@ function numSize(number) {
     const numberAsString = '' + number;
     let numberSize = numberAsString.length;
 
-    if (numberAsString.includes('-')) {
+    if (number < 0) {
         numberSize--;
     }
 
-    if (numberAsString.includes('.')) {
+    if (number % 1 !== 0) {
         numberSize--;
     }
 
