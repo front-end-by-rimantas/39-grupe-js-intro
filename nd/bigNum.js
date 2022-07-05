@@ -12,7 +12,9 @@ function bigNum(list) {
 
     for (let i = 0; i < list.length; i++) {
         const number = list[i];
-        if (number > biggest) {
+        if (typeof number === 'number'
+            && isFinite(number)
+            && number > biggest) {
             biggest = number;
         }
     }
@@ -32,6 +34,8 @@ console.log(bigNum(false), '->', 'ERROR');
 console.log(bigNum(undefined), '->', 'ERROR');
 console.log(bigNum(null), '->', 'ERROR');
 console.log(bigNum({}), '->', 'ERROR');
+console.log(bigNum([NaN, NaN, NaN, NaN, NaN]), '->', 'ERROR');
+console.log(bigNum([Infinity, Infinity, Infinity]), '->', 'ERROR');
 
 console.log(bigNum([1]), '->', 1);
 console.log(bigNum([3]), '->', 3);
@@ -46,4 +50,11 @@ console.log(bigNum([NaN, 1, 2, 3, 4]), '->', 4);
 console.log(bigNum([NaN, NaN, 2, 3, 4]), '->', 4);
 console.log(bigNum([NaN, NaN, NaN, 3, 4]), '->', 4);
 console.log(bigNum([NaN, NaN, NaN, NaN, 4]), '->', 4);
-console.log(bigNum([NaN, NaN, NaN, NaN, NaN]), '->', 'ERROR');
+console.log(bigNum([1, 2, 3, 4, Infinity]), '->', 4);
+console.log(bigNum([1, 2, 3, 4, Infinity]), '->', 4);
+
+console.log(bigNum([0, -Infinity, Infinity, NaN, null, undefined, '', 'a', [], ['a']]), '->', 0);
+console.log(bigNum([0, '2']), '->', 0);
+console.log(bigNum([0, [3]]), '->', 0);
+console.log(bigNum([0, true]), '->', 0);
+console.log(bigNum([-1, false]), '->', -1);
