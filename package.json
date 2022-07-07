@@ -10,6 +10,7 @@
         "numSize": "nodemon ./nd/numSize.js",
         "daugyba": "nodemon ./nd/daugyba.js",
         "tusciaFunkcija": "nodemon ./nd/tusciaFunkcija.js",
+        "loops": "nodemon ./js/loops.js",
         "function": "nodemon ./js/function.js",
         "switch": "nodemon ./js/switch.js",
         "if": "nodemon ./js/if.js",
