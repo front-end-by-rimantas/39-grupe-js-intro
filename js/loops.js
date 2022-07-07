@@ -55,31 +55,27 @@ do {
 } while (iDoWhile < numbers.length);
 
 console.log('####### FOREACH');
-numbers.forEach(function (number, i, arr) {
-    console.log(`${i}) ${number}`, arr);
-});
+numbers.forEach((number, i, arr) => console.log(`${i}) ${number}`, arr));
 
 console.log('####### FOREACH + function');
 function forEachCallback(number, i) {
     console.log(`${i}) ${number}`);
 }
+const forEachCallbackArrow = (number, i) => console.log(`${i}) ${number}`);
 
 numbers.forEach(forEachCallback);
+numbers.forEach(forEachCallbackArrow);
 
 console.log('####### MAP');
 console.log('-- numbers');
 // grazina nauja masyva su modifikuotais duomenimis
-const doubleNumbers = numbers.map(function (number) {
-    return number * 2;
-});
+const doubleNumbers = numbers.map(n => n * 2);
 console.log(doubleNumbers);
 console.log(numbers);
 
 console.log('-- strings');
 const names = ['Petras', 'Maryte', 'Jonas', 'Ona'];
-const firstNameLetters = names.map(function (name, i) {
-    return name[0];
-});
+const firstNameLetters = names.map(name => name[0]);
 console.log(names);
 console.log(firstNameLetters);
 
@@ -94,12 +90,8 @@ console.log('####### FILTER');
 // grazina nauja masyva su atfiltruotais
 // (tais, kuriu tau reikia) duomenimis
 console.log('-- numbers');
-const oddNumbers = numbers.filter(function (number) {
-    return number % 2 !== 0;
-});
-const evenNumbers = numbers.filter(function (number) {
-    return number % 2 === 0;
-});
+const oddNumbers = numbers.filter(n => n % 2 !== 0);
+const evenNumbers = numbers.filter(n => n % 2 === 0);
 
 console.log(numbers);
 console.log('odd:', oddNumbers);
