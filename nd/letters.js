@@ -20,8 +20,14 @@ function letters(text, step) {
 
     let answer = '';
 
-    for (let i = step - 1; i < text.length; i += step) {
-        answer += text[i];
+    if (step > 0) {
+        for (let i = step - 1; i < text.length; i += step) {
+            answer += text[i];
+        }
+    } else {
+        for (let i = text.length + step; i >= 0; i += step) {
+            answer += text[i];
+        }
     }
 
     return answer;
@@ -44,8 +50,6 @@ console.log(letters('abcdefg', 2), '->', 'bdf');
 console.log(letters('abcdefghijkl', 3), '->', 'cfil');
 console.log(letters('abcdefghijkl', 4), '->', 'dhl');
 
-// console.log(letters('abcdefghijkl', -1), '->', 'lkjihgfedcba');
-// console.log(letters('abcdefghijkl', -2), '->', 'kigeca');
-// console.log(letters('abcdefghijkl', -3), '->', 'jgda');
-
-
+console.log(letters('abcdefghijkl', -1), '->', 'lkjihgfedcba');
+console.log(letters('abcdefghijkl', -2), '->', 'kigeca');
+console.log(letters('abcdefghijkl', -3), '->', 'jgda');
