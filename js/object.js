@@ -76,3 +76,67 @@ for (let i = 0; i < students.length; i++) {
     const labas = `Sveiki, as ${student.name} ir man ${student.age} metu.`;
     console.log(labas);
 }
+
+console.clear();
+
+const zmogus = {
+    akiuSpalva: 'red',
+    profesija: 'programeris',
+    ugis: 200,
+    galva: true,
+    arklys: false,
+}
+
+console.log(zmogus);
+
+// ka nori suzinoti vartotojas
+const interesas = 'akiuSpalva';
+
+console.log(`${interesas}: ${zmogus[interesas]}`);
+
+zmogus.drabuziai = 'geri drabuziai 👍';
+console.log(zmogus);
+console.log(zmogus.drabuziai);
+
+zmogus.masina = 'su varykliu';
+console.log(zmogus);
+console.log(zmogus.masina);
+
+console.log('Zmogaus objekta sudarantys raktazodziai:');
+const zmogusKeys = Object.keys(zmogus);
+console.log(zmogusKeys);
+
+console.log(Object.keys({}));
+console.log(Object.keys({ a: 1 }));
+console.log(Object.keys({ a: 1, b: 2 }));
+
+console.clear();
+
+const uodegos = ['neturi', 'trumpa', 'riesta', 'ilga'];
+const gyvunas = {
+    rusis: 'kate',
+    kraujas: 'saltas',
+    spalva: 'geltonas',
+    liezuvis: 20,
+    liezuvioMatavimoVienetas: 'cm',
+    uodega: uodegos[2],
+    key: 'raktas...',
+}
+
+console.log(gyvunas);
+
+console.log('----------');
+const gyvunoKeys = Object.keys(gyvunas);
+for (const key of gyvunoKeys) {
+    console.log(`${key}: ${gyvunas[key]}`);
+}
+
+console.log('----------');
+for (const key of Object.keys(gyvunas)) {
+    console.log(`${key}: ${gyvunas[key]}`);
+}
+
+console.log('----------');
+for (const key in gyvunas) {
+    console.log(`${key}: ${gyvunas[key]}`);
+}
