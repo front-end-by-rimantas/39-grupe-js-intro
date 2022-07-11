@@ -5,11 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
-        "letters": "nodemon ./nd/letters.js",
-        "bigNum": "nodemon ./nd/bigNum.js",
-        "numSize": "nodemon ./nd/numSize.js",
-        "daugyba": "nodemon ./nd/daugyba.js",
-        "tusciaFunkcija": "nodemon ./nd/tusciaFunkcija.js",
+        "spread": "nodemon ./js/spread.js",
         "object": "nodemon ./js/object.js",
         "arrow": "nodemon ./js/arrow.js",
         "loops": "nodemon ./js/loops.js",
@@ -21,7 +17,12 @@
         "boolean": "nodemon ./js/boolean.js",
         "strings": "nodemon ./js/strings.js",
         "numbers": "nodemon ./js/numbers.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "letters": "nodemon ./nd/letters.js",
+        "bigNum": "nodemon ./nd/bigNum.js",
+        "numSize": "nodemon ./nd/numSize.js",
+        "daugyba": "nodemon ./nd/daugyba.js",
+        "tusciaFunkcija": "nodemon ./nd/tusciaFunkcija.js"
     },
     "keywords": [],
     "author": "Rimantas",

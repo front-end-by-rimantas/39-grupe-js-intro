@@ -137,6 +137,24 @@ for (const key of Object.keys(gyvunas)) {
 }
 
 console.log('----------');
+let keyIndex = 0;
 for (const key in gyvunas) {
     console.log(`${key}: ${gyvunas[key]}`);
+    gyvunas['raktas' + keyIndex++] = 5;
 }
+
+console.log(gyvunas);
+
+console.clear();
+
+const user = {
+    name: 'Petras',
+    age: 99,
+    isMarried: true,
+    password: 'nesakysiu',
+}
+
+console.log(user);
+
+delete user.password;
+console.log(user);
